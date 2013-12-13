@@ -1,0 +1,14 @@
+<h1>SIB Expose Companies</h1>
+
+<ul class="company-list">
+  <% @companies.each do |company| %>
+    <li class='company'><%= link_to company.name, company.url, target: '_blank', class: 'company-name' %>
+        <a href="#" class="dropdown">&#9660;</a>
+      <ul class="attendee-list">
+        <% company.attendees.each do |attendee| %>
+          <li><%= link_to attendee.name, attendee.url, target: '_blank' %></li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>

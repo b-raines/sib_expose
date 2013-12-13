@@ -1,0 +1,14 @@
+
+<ul>
+<% @attendees.each do |key, value| %>
+  <% value.each do |attendee| %>
+    <% attendee.each do |key, values| %>
+    <li>
+      <%= values["first_name"] %>
+    </li>
+    <% end %>
+  <% end %>
+<% end %>
+</ul>
+
+<%= @attendees %>
