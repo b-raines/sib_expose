@@ -5,6 +5,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 gem 'eventbrite-client'
 gem 'zurb-foundation'
+gem 'clockwork'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
