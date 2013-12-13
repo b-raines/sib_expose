@@ -12,7 +12,7 @@ function rotate(element, degree) {
 $(document).ready(function() {
 	$(document.body).on('click', '.dropdown', function() {
 		event.preventDefault();
-		$(this).parent().find('.attendee-list').toggle();
+		$(this).parent().find('.attendee-list').toggleClass('visible');
 		console.log($(this).find('span').html());
 		$(this).find('.caret').toggleClass('upside-down');
 	});
