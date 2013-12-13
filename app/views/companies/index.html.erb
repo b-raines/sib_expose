@@ -5,19 +5,19 @@
 <ul class="company-list">
   <% @companies.each do |company| %>
 
-  <li class="company">
-    <%= link_to company.url, class: 'company-name', target: '_blank' do %>
-      <div><%= company.name %></div>
-    <% end %>
+    <li class="company">
+      <%= link_to company.name, company.url, class: 'company-name', target: '_blank' %>
 
-    <%= link_to '#', class: 'dropdown', target: '_blank' do %>
-      <div class="carat"><span>&#9660;</span></div>
-    <% end %>
+      <%= link_to '#', class: 'dropdown', target: '_blank' do %>
+        <div class="carat"><span>&#9660;</span></div>
+      <% end %>
+
       <ul class="attendee-list">
         <% company.attendees.each do |attendee| %>
           <li><%= link_to attendee.name, attendee.url, target: '_blank' %></li>
         <% end %>
       </ul>
+      
     </li>
   <% end %>
 </ul>
