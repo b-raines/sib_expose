@@ -3,34 +3,48 @@ h1
   border: 1px solid #bbb
 
 .container
-  padding: 10px 20px
-  width: 480px
+  padding: 10px 4px
+  width: 100%
+  min-width: 320px
   margin: 0 auto
 
 .company-list
   list-style: none
-  width: 440px
+  width: 100%
+  min-width: 300px
 
 .company
   position: relative
-  padding: 4px 0 4px 6px
+  padding: 0 54px 0 10px
   border-top: 1px solid #bbb
   &:last-child
     border-bottom: 1px solid #bbb
   &:nth-child(even)
     background-color: #eee
+  div
+    height: 54px
+    padding: 18px 0
 
 .company-name
-  margin: 4px 0
+  div
+    height: inherit
+    overflow: hidden
+    text-overflow: ellipsis
 
 .attendee-list
   display: none
   list-style: none
   li
     margin-right: 30px
-    padding: 2px
+    padding: 6px 0
     border-top: 1px solid #ccc
 
-.dropdown
+.carat
+  height: inherit
+  width: 54px
   position: absolute
-  right: 4px
+  top: 0
+  right: 0
+  span
+    position: relative
+    left: 18px
