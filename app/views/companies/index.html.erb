@@ -4,12 +4,12 @@
 
 <ul class="company-list">
   <% @companies.each do |company| %>
-
     <li class="company">
+
       <%= link_to company.name, company.url, class: 'company-name', target: '_blank' %>
 
       <%= link_to '#', class: 'dropdown', target: '_blank' do %>
-        <div class="carat"><span>&#9660;</span></div>
+        <div class="caret"><span>&#9660;</span></div>
       <% end %>
 
       <ul class="attendee-list">
@@ -17,7 +17,7 @@
           <li><%= link_to attendee.name, attendee.url, target: '_blank' %></li>
         <% end %>
       </ul>
-      
+
     </li>
   <% end %>
 </ul>
